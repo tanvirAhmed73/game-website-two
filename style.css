@@ -1,0 +1,866 @@
+*{
+    font-family: 'lato', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    max-width: 1440px;
+}
+/*************************************** navbar of header */
+header{
+    padding: 0px 150px ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;  
+    width: 86.04px;
+    height: 40px;
+}
+.gamer-name{
+    color: #FF42A5;
+    padding-left: 10px;
+}
+.logo-title{
+    font-size: 40px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+} 
+nav li{
+    display: flex; 
+    justify-content: center;
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-option-icon a{
+    text-decoration: none;
+    color: #3C354F;
+}
+
+.nav-option-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-icon{
+    background-color: #ddd1ff;
+    height: 40px;
+    width: 200px;
+    border-radius: 9px;
+}
+.nav-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-youtube{
+    color: red;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: small;
+}
+.fa-tiktok{
+    font-size: small;
+}
+
+/************************************************************ responsive media query for header */
+@media screen and (max-width: 425px) {
+
+    /********************** header and nav option resoponsive */
+    header{
+        padding: 20px ;
+    }
+    nav{
+        flex-direction: column;
+    
+    }
+    .logo{
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .nav-option-icon{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-option-about, .developers-option{
+        padding-bottom: 20px;
+    }
+    .nav-icon{
+        margin-top: 20px;
+    }  
+}
+/************************************************************tablet responsive media query for header */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    /********************** header and nav option resoponsive */
+    header{
+        padding: 20px ;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .logo{
+        margin-bottom: 10px;
+        justify-content: center;
+        padding-left: 90px;
+    }
+    .nav-option{
+        padding-left: 100px;
+    }
+    .gamer-name{
+        color: #FF42A5;
+        padding-left: 10px;
+    }
+    .logo-title{
+        font-size: 40px;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: center;
+    } 
+    nav li{
+        display: flex; 
+        justify-content: center;
+        list-style: none;
+        margin-right: 30px;
+    }
+    .nav-option-icon a{
+        text-decoration: none;
+        color: #3C354F;
+    }
+    
+    .nav-option-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-icon{
+        background-color: #ddd1ff;
+        height: 40px;
+        width: 200px;
+        border-radius: 9px;
+    }
+    .nav-icon-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+}
+
+
+/******************************************************************* first banner */
+.section-1{
+    max-height: 450px;
+}
+.banner-image{
+    display: flex;
+}
+.banner-image img{
+    max-height: 450px;
+}
+.image-2-con-1{
+    padding-left: 140px;
+}
+.con-1-image-2{
+    margin-left: 100px;
+}
+.shadow-and-title{
+    position: relative;
+    text-align: left;
+    padding-left: 150px;
+    bottom: 400px;
+}
+
+.sign-in-btn, .rogue-btn{
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+}
+.sign-in-btn{
+    background-color: #FF42A5;
+}
+.rogue-btn{
+    background-color: rgba(0, 231, 231, 0.863);
+}
+.goat{
+    font-size: 63px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff64cb, #880bee);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width: 425px) {
+
+    /********************** 1st banner resoponsive */
+    .banner-image{
+        flex-direction: column-reverse;
+    }
+    .con-1-image-2{
+        margin-left: 0;
+        width: 100%;
+    }
+    .con-1-image-1{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+    }
+    .con-1-title{
+        text-align: left;
+        
+    }
+    .shadow-and-title{
+        padding-top: 110px;
+        margin-top: 300px;
+        width: 250px;
+        position: relative;
+        text-align: left;
+        padding-left: 25%;
+    }
+}
+/* first banner responsive for tablet */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .section-1{
+        max-height: auto;
+    }
+    .banner-image img{
+        max-height: 450px;
+        width: 100%;
+
+    }
+    .image-2-con-1{
+        padding-left: 140px;
+    }
+    .con-1-image-2{
+        margin-left: 100px;
+    }
+    .shadow-and-title{
+        position: relative;
+        text-align: left;
+        padding-left: 10px;
+        bottom: 400px;
+        width: 250px;
+    }
+    
+    .sign-in-btn, .rogue-btn{
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: white;
+    }
+    .sign-in-btn{
+        background-color: #FF42A5;
+    }
+    .rogue-btn{
+        background-color: rgba(0, 231, 231, 0.863);
+    }
+    .shadow-and-title{
+        padding-top: 30px;
+    }
+    .goat{
+        font-size: 40px;
+        font-weight: bold;
+        background: linear-gradient(to right, #ff64cb, #880bee);
+        -webkit-background-clip: text; 
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+/************************************ online game funny video section */
+.section-2{
+    text-align: center;
+    margin-top: 80px;
+}
+/* *********************************responsive section 2 */
+@media screen and (max-width: 425px){
+    .section-2{
+        margin-top: 370px;
+        font-size: smaller;
+    }
+}
+
+.funny-video{
+    background: linear-gradient(to right, #ff64cb, #880bee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.game-picture{
+    position: relative;
+    padding: 10px;
+}
+.video-game-hover{
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    border-radius: 15px;
+    top: 13px;
+    left: 13px;
+    width: 215px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.fa-play{
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+
+.game-picture img{
+    width: 100%;
+    border-radius: 15px;
+    border: 4px solid transparent;
+}
+/*********************************** resposinve section */
+@media screen and (max-width: 425px){
+    .videos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .game-picture img{
+        width: 100%;
+        border-radius: 15px;
+        border: 4px solid transparent;
+    }
+    .game-picture{
+        position: relative;
+        padding: 10px;
+    }
+    .video-game-hover{
+        display: block;
+    }
+    .funny-video{
+        background: linear-gradient(to right, #ff64cb, #880bee);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .overlay{
+        position: absolute;
+        border-radius: 15px;
+        top: 15px;
+        left: 13px;
+        width: 390px;
+        height: 455px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+    }
+    .overlay:hover{
+        opacity: 1;
+    }
+    
+    .game-picture img{
+        width: 100%;
+        border-radius: 15px;
+        border: 4px solid transparent;
+    }
+}
+
+/* tablet responsive */
+    /* *********************************responsive section 2 */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .section-2{
+        margin-top: 10px;
+        padding-left: 120px;
+        font-size: smaller;
+    }
+    .funny-video{
+        background: linear-gradient(to right, #ff64cb, #880bee);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .container-2{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .videos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .game-picture{
+        position: relative;
+        padding: 10px;
+    }
+    .video-game-hover{
+        display: block;
+    }
+    
+    .overlay{
+        position: absolute;
+        border-radius: 15px;
+        top: 13px;
+        left: 13px;
+        width: 158px;
+        height: 185px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+    }
+    
+    .overlay:hover{
+        opacity: 1;
+    }
+    
+    .overlay-title{
+        font-size: 2em;
+        font-weight: bold;
+        padding-left: 30px;
+    }
+    .fa-play{
+        font-size: 2em;
+        padding-bottom: 15px;
+    }
+    
+    .game-picture img{
+        width: 100%;
+        border-radius: 15px;
+        border: 4px solid transparent;
+    }
+}
+
+/* **********************************play game online anytime anywhere */
+.container-3{
+    display: flex;
+}
+.section-3{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.big-image{
+    width: 400px;
+}
+.section-3-content{
+    padding-left: 150px;
+    padding-top: 100px;
+}
+.section-3-content span{
+    font-weight: bold;
+    background: linear-gradient(to right, #ff64cb, #880bee);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+.little-image{
+    position: relative;
+    left: 300px;
+    bottom: 150px;
+    width: 200px;
+}
+/* ***************************************************responsive section************************************************************************/
+@media screen and (max-width: 425px){
+    .container-3{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .section-3-content{
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .section-3{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .section-3-image{
+        margin-top: 60px;
+        width: 100%;
+    }
+    .little-image{
+        position: relative;
+        left: 210px;
+        bottom: 150px;
+        max-width: 200px;
+        width: 100%;
+    }
+    .big-image{
+        max-width: 350px;
+        width: 100%;
+
+    }
+    
+}
+/* tablet responsive */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .container-3{
+        display: grid;
+        width: 100%;
+    }
+    .section-3{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+        width: 100%;
+
+    }
+    .big-image{
+        width: 400px;
+
+    }
+    .section-3-content{
+        padding-left: 0px;
+        padding-top: 0px;
+
+    }
+    .section-3-content span{
+        font-weight: bold;
+        background: linear-gradient(to right, #ff64cb, #880bee);
+        -webkit-background-clip: text; 
+        background-clip: text;
+        color: transparent;
+
+    }
+    
+    .little-image{
+        position: relative;
+        left: 300px;
+        bottom: 150px;
+        width: 200px;
+    }
+}
+
+
+/**************************** section 4 */
+.section-4{
+    margin-left: 300px;
+    margin-right: 200px;
+}
+.container-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-4-icon{
+    width: 35px;
+    padding-right: 5px;
+}
+.section-4-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.section-4-img-text{
+    padding-right: 20px;
+}
+.section-4-text:hover{
+    color: #FF42A5;
+    border: 2px solid #FF42A5;
+
+}
+
+/* responsive**************************************************** */
+@media screen and (max-width: 425px){
+    .container-4{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .section-4{
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-4-icon{
+        width: 30px;
+        padding-right: 3px;
+    }
+    .section-4-text{
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid transparent;
+        border-radius: 60px;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    .section-4-img-text{
+        padding-right: 5px;
+        padding-bottom: 10px;
+    }
+    .section-4-text:hover{
+        color: #FF42A5;
+        border: 2px solid #FF42A5;
+    }
+}
+
+/* tablet responsive */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .container-4{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        margin-left: 160px;
+        
+    }
+    .section-4{
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-4-icon{
+        width: 30px;
+        padding-right: 3px;
+    }
+    .section-4-text{
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid transparent;
+        border-radius: 60px;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    .section-4-img-text{
+        padding-right: 5px;
+        padding-bottom: 10px;
+    }
+    .section-4-text:hover{
+        color: #FF42A5;
+        border: 2px solid #FF42A5;
+    }
+}
+
+/* ************************************************************************footer */
+.footer{
+    margin-top: 60px;
+    background-color: #0B0223;
+    height: 400px;
+    width: 100%;
+}
+.footer-container{
+    text-align: center;
+}
+.footer-logo{
+    color: white;
+    display: flex;
+    align-items: center;  
+    width: 5px;
+    height: 5px;
+    padding-top: 70px;
+    padding-left: 43%;
+}
+.footer-color-g{
+    color:#FF42A5;
+    margin-left: 15px;
+}
+
+.footer-option{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    list-style: none;
+}
+.footer-option a{
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container p{
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu a{
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    margin: 20px;
+}
+
+.copyright-tag{
+    display: flex;
+    justify-content: center;
+}
+.first-line{
+    padding-right: 5px;
+}
+
+
+/********************************** footer icon */
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.fa-brands{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fa-twitter{
+    color: aqua;
+    padding-right: 30px;
+}
+.fa-facebook{
+    color: blue;
+    padding-right: 30px;
+
+}
+.fa-linkedin{
+    color: #0072b1;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+.fa-square-instagram{
+    color: #ffc918;
+    padding-right: 30px;
+
+} 
+.fa-apple{
+    color: white;
+    padding-right: 30px;
+}
+/******************************************************* footer responsive */
+@media screen and (max-width: 425px){
+    .footer{
+        height: auto;
+    }
+    
+    .footer-logo{
+        align-items: center;  
+        padding-left: 100px;
+    }
+    .footer-option{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding-right: 30px;
+    }
+    .footer-option a{
+        padding: 0px;
+        justify-content: center;
+        font-size: 10px;
+        padding-bottom: 15px;
+        text-decoration: none; 
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding-left: 25px;
+    }
+    .footer-menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright-tag{
+        display: grid;
+        justify-content: center;
+    }
+}
+/* tablet responsive */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .footer{
+        height: auto;
+    }
+    
+    .footer-logo{
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .footer-option{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding-right: 30px;
+    }
+    .footer-option a{
+        padding: 0px;
+        justify-content: center;
+        font-size: 10px;
+        padding-bottom: 15px;
+        text-decoration: none; 
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding-left: 25px;
+    }
+    .footer-menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright-tag{
+        display: grid;
+        justify-content: center;
+    }
+}
