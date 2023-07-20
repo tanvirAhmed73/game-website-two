@@ -526,7 +526,6 @@ nav li{
     }
     .little-image{
         position: relative;
-        border: 2px solid tomato;
         left: 240px;
         bottom: 130px;
         max-width: 150px;
@@ -539,21 +538,15 @@ nav li{
 @media screen and (min-width: 426px) and (max-width: 768px){
     .container-3{
         display: grid;
-        width: 100%;
+        justify-content: center;
     }
     .section-3{
-        margin-top: 50px;
-        margin-left: 200px;
-        margin-right: 200px;
-        width: 100%;
-
-    }
-    .big-image{
-        width: 400px;
-
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .section-3-content{
-        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 0px;
 
     }
@@ -565,12 +558,17 @@ nav li{
         color: transparent;
 
     }
-    
+    .big-image{
+        max-width: 350px;
+        width: 100%;
+
+    }
     .little-image{
         position: relative;
-        left: 300px;
-        bottom: 150px;
-        width: 200px;
+        left: 240px;
+        bottom: 130px;
+        max-width: 150px;
+        width: 100%;
     }
 }
 
@@ -824,8 +822,16 @@ nav li{
 }
 /* tablet responsive */
 @media screen and (min-width: 426px) and (max-width: 768px){
-    .footer{
+    .footer-container{
+        
+        margin-top: 60px;
+        background-color: #0B0223;
+        height: 400px;
+        
+
+        border: 1px solid tomato;
         height: auto;
+        width: 100%;
     }
     
     .footer-logo{
